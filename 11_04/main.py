@@ -1,8 +1,8 @@
 import requests
 
 
-MISTRAL_API_KEY = "ZuJF2w6Hyepz7QtCqoQAPXof9qeZA26J"
-NEWSAPI_KEY = "99aabb9cea4749fbbcd1b90919b2d5f4"
+MISTRAL_API_KEY = "мой_ключик_mistral"
+NEWSAPI_KEY = "мой_ключик_новостей"
 
 
 def get_news(topic):
