@@ -32,7 +32,7 @@ def get_europeana_data():
 
     except Exception as e:
         print("Ошибка Europeana:", e)
-        print("Используем fallback...")
+        print("Используем fallback")
 
         return [
             {"title": "Impressionist Landscape with Soft Light"},
@@ -99,18 +99,18 @@ def save_image(image_bytes):
 
 #MAIN
 if __name__ == "__main__":
-    print("Запуск...\n")
+    print("Запуск\n")
 
     items = get_europeana_data()
 
-    print("\nСоздаём промпт...")
+    print("\nСоздаём промпт")
     prompt = build_prompt(items)
     print("\nPROMPT:\n", prompt)
 
-    print("\nГенерация...")
+    print("\nГенерация")
     image = generate_image(prompt)
 
-    print("\nСохранение...")
+    print("\nСохранение")
     save_image(image)
 
-    print("\nГотово!")
+    print("\nГотово")
